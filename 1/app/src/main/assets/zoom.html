@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    </head>
+    <body>
+        <div id="div"></div>
+        <script>
+        window.addEventListener("load", () => {
+            ZoomActivity.onLoad();
+        });
+
+        function updateFromAndroid(data){
+          var dataDecoded = decodeURIComponent(data.replace( /\+/g, " " ));
+          if (dataDecoded.startsWith("http://") || dataDecoded.startsWith("https://")) {
+            window.location = decodeURIComponent(data);
+          } else {
+            var div = document.getElementById('div');
+            div.textContent = dataDecoded;
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+          }
+        }
+        </script>
+    </body>
+</html>
