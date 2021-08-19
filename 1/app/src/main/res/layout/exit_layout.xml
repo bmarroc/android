@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_widthPercent="100%"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        app:layout_widthPercent="50%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="25%"
+        app:layout_heightPercent="10%"
+        android:textColor="#222222"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Cerrar sesión" />
+
+    <TextView
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="15%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_heightPercent="10%"
+        android:text="¿Esta seguro que desea salir?"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <android.support.percent.PercentRelativeLayout
+        app:layout_widthPercent="100%"
+        app:layout_marginTopPercent="25%"
+        app:layout_heightPercent="10%"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/acceptButton"
+            app:layout_widthPercent="30%"
+            app:layout_marginRightPercent="2%"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="19%"
+            android:backgroundTint="#018786"
+            android:text="Aceptar"
+            android:textColor="#feffff" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            app:layout_widthPercent="30%"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="51%"
+            android:backgroundTint="#feffff"
+            android:text="Cancelar"
+            android:textColor="#018786" />
+
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#222222"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Cerrar sesión" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="¿Esta seguro que desea salir?"
+        android:layout_below="@id/textView1"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:backgroundTint="#018786"
+            android:text="Aceptar"
+            android:textColor="#feffff" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/acceptButton"
+            app:backgroundTint="#feffff"
+            android:text="Cancelar"
+            android:textColor="#018786" />
+    </RelativeLayout>
+</RelativeLayout>
