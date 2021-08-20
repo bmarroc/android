@@ -4,4 +4,4 @@ This repository contains several Android projects testing different ideas and te
 
 ### Table of contents
 
-* [1 - Guasap: simply firebase chat app](https://github.com/bmarroc/android/tree/main/1)
+* [1 - Guasap: a simple firebase chat app](https://github.com/bmarroc/android/tree/main/1)
