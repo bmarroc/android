@@ -1,8 +1,6 @@
 ## Android
 
-This repository contains several Android projects testing different ideas. 
-
-These notebooks use Python 3.6.9. 
+This repository contains several Android projects testing different ideas and technologies. 
 
 ### Table of contents
 
