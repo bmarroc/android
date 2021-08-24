@@ -1,6 +1,6 @@
 ## Android
 
-This repository contains several Android projects testing different ideas and technologies. 
+This repository contains several Android projects implementing different ideas. 
 
 ### Table of contents
 
